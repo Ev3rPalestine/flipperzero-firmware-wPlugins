@@ -8,20 +8,30 @@
     - Custom button improvements for MHouse, Novoferm, Nice Smilo
     - Hormann EcoStar -> Add manually support, and custom button support
     - Hormann HSM 44bit static -> Button code decoding fix
+    - Choose RSSI threshold for Hopping mode (by @Willy-JL)
 - NFC: 
     - OFW: Ultralight C authentication with des key
     - EMV Transactions less nested, hide if unavailable (by @Willy-JL | PR #771)
+    - Update Mifare Classic default keys dict with new keys from proxmark3 repo and UberGuidoZ repo
 - LF RFID: 
     - Update T5577 password list (by @korden32 | PR #774)
     - Add DEZ 8 display form for EM4100 (by @korden32 | PR #776 & (#777 by @mishamyte))
 - JS: 
     - Refactor widget and keyboard modules, fix crash (by @Willy-JL | PR #770)
     - SubGHz module fixes and improvements (by @Willy-JL)
+* OFW: Infrared: check for negative timings
 * OFW: Fix iButton/LFRFID Add Manually results being discarded
 * OFW: Event Loop Timers
 * OFW: Updater: resource compression
 * Apps: **Check out more Apps updates and fixes by following** [this link](https://github.com/xMasterX/all-the-plugins/commits/dev)
 ## Other changes
+* OFW: Disabled ISR runtime stats collection for updater builds
+* OFW: VSCode fixes: .gitignore & clangd
+* OFW: ufbt: synced .clang-format rules with main
+* OFW: Code formatting update 
+* OFW: scripts: runfap: fixed starting apps with spaces in path
+* OFW: toolchain: v38. clangd as default language server
+* OFW: NFC: ISO15693 Render Typo Fix
 * OFW: tar archive: fix double free
 * OFW: ufbt: added ARGS to commandline parser
 * OFW: lib: sconscript todo cleanup
